@@ -1,0 +1,205 @@
+body {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+li {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+/* --------------------------------- */
+/* --------- HEADER----------------- */
+/* --------------------------------- */
+
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #3e3e3e;
+    display: grid;
+}
+
+.container-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo links";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    width: 300px;
+    height: 95px;
+    object-fit: cover;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+}
+
+.header-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-right: 25%;
+    font-size: 1.2em;
+    color: white;
+    grid-area: links;
+}
+
+.ifood-header {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+.header-list a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+/* --------------------------------- */
+/* --------- MAIN----------------- */
+/* --------------------------------- */
+
+.fondo-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.img-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------------------------------- */
+/* --------- FOOTER----------------- */
+/* --------------------------------- */
+
+footer {
+    width: 100%;
+    height: 250px;
+    display: grid;
+    background-color: #fffde0a1;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "logo about social";
+}
+
+.logo-footer {
+    padding-left: 25%;
+}
+
+.container-img-footer {
+    width: 300px;
+    height: 150px;
+    display: block;
+    text-align: center;
+    grid-area: logo;
+}
+
+.container-img-footer p {
+    margin-top: -9px;
+}
+
+.img-footer {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us h2 {
+    margin-top: -40px;
+}
+
+.container-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 0 100px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.container-about-us a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 25%;
+}
+
+.redes-sociales h2 {
+    margin-top: -40px;
+}
+
+.container-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-block;
+    width: 55px;
+    height: 95px;
+    margin: 0 -5px;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .social-link.tiktok {
+    background-image: url('assets/tik-tok.svg');
+  }
+  
+  .social-link.facebook {
+    background-image: url('assets/facebook-color.svg');
+  }
+  
+  
+  .social-link.instagram {
+    background-image: url('assets/instagram-color.svg');
+  }
+  
+  .social-link.whatsapp {
+    background-image: url('assets/whatsapp-color.svg');
+  }
+
+  .social-link.ifood {
+    background-image: url('assets/ifood-color.svg');
+  }
+
