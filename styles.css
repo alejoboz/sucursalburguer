@@ -21,7 +21,7 @@ li {
 header {
     width: 100%;
     height: 100px;
-    background-color: #3e3e3e;
+    background-color: #fffde0a1;
     display: grid;
 }
 
@@ -49,6 +49,7 @@ header {
 .logo-image {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .header-list {
@@ -58,7 +59,7 @@ header {
     list-style: none;
     padding-right: 25%;
     font-size: 1.2em;
-    color: white;
+    color: black;
     grid-area: links;
 }
 
@@ -79,13 +80,277 @@ header {
 
 .fondo-container {
     width: 100%;
-    height: 100vh;
+    height: 100%
 }
 
 .img-fondo {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    width: 75%;
+    height: 600px;
+    z-index: 2;
+    background-color: black;
+    flex-direction: column;
+    align-self: center;
+}
+
+.container-grid {
+    margin: 0 auto;
+    display: inherit;
+    width: 80%;
+}
+
+.ifood-btn-container {
+    margin: 1%;
+    width: 45%;
+    border-radius: 20px;
+    background-color: red;
+    margin-left: 50px;
+}
+
+.ifood-container-img {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.ifood-container-img img {
+    width: 90%;
+    height: 200px;   
+    margin-top: 20px;
+}
+
+.ifood-detalle {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.ifood-detalle h2 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+}
+
+.ifood-detalle p {
+    font-size: 1.3em;
+    margin: 10px 0 20px;
+}
+
+.ifood-detalle a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+}
+
+.whatsapp-btn-container {
+    margin: 1%;
+    width: 45%;
+    border-radius: 20px;
+    background-color: greenyellow;
+    margin-left: 50px;
+}
+
+.whatsapp-container-img {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.whatsapp-container-img img {
+    width: 45%;
+    height: 200px;
+}
+
+.whatsapp-detalle {
+    margin: 20px 40px;
+    margin-top: -17px;
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.whatsapp-detalle h2 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+}
+
+.whatsapp-detalle p {
+    font-size: 1.3em;
+    margin: 10px 0 20px;
+}
+
+.whatsapp-detalle a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+}
+/* --------------------------------- */
+/* --------- Section 2 - Menú detallado ----------------- */
+/* --------------------------------- */
+
+.detal-menu {
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+.container-plato {
+    display: flex;
+    height: 400px;
+}
+
+.img-plato-container {
+    width: 60%;
+}
+
+.img-plato-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: -50px;
+    box-shadow: 0 0 10px 1px #2e2e2f;
+}
+
+.detal-container {
+    color: white;
+    text-align: initial;
+    background-color: black;
+    position: absolute;
+    width: 40%;
+    margin-left: 50%;
+    height: 400px;
+    padding: 0 25px;
+}
+
+.container-border {
+    margin: 0;
+    height: 380px;
+    width: 104%;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+}
+
+.container-border h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+/*     font-family: bangers, sans-serif
+ */}
+
+.borde-pequeno {
+    width: 30%;
+    border-top: 5px solid red;
+}
+
+.container-border p {
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-bottom: 1.5em;
+}
+
+.container-border .la-quiero {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.canengo {
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.detal-container-2 {
+    color: white;
+    text-align: initial;
+    background-color: black;
+    position: absolute;
+    width: 40%;
+    height: 400px;
+}
+
+.img-plato-container-2 {
+    width: 60%;
+}
+
+.img-plato-container-2 img {
+    width: 106%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: -50px;
+    box-shadow: 0 0 10px 1px #2e2e2f;
+    margin-left: 60%;
+}
+
+.container-border-2 {
+    height: 380px;
+    width: 90%;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    padding: 0 25px;
+    margin-left: -5px;
+}
+
+.container-border-2 h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+/*     font-family: bangers, sans-serif
+ */}
+
+.container-border-2 p {
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-bottom: 1.5em;
+}
+
+.container-border-2 .la-quiero {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.container-plato-2 {
+    display: flex;
+    margin-left: 4%;
+    height: 400px;
 }
 
 /* --------------------------------- */
