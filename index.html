@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>La Sucursal Burguer</title>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="container-header">
             <div class="logo">
                 <div class="logo-container">
-                   <img src="assets/logo.svg" class="logo-image" alt="Logo empresarial">
+                    <img src="assets/logo.svg" class="logo-image" alt="Logo empresarial">
                 </div>
             </div>
             <ul class="header-list">
                 <li>
-                    Nuestro Menú
+                    <a href="#menu" class="link nuestro-menu">Nuestro Menú</a>
                 </li>
                 <li>
-                    Visítanos
+                    <a href="#visitanos" class="link visitanos-btn">Visítanos</a>
                 </li>
                 <li class="ifood-header">
-                    <a href="https://www.ifood.com.co/delivery/cali-vac/la-sucursal-burguer-valle-de-lili-hub-el-ingenio/51e1972f-a89b-419a-a877-031713faa735">Pide Ya!</a>
+                    <a  class="link ifood-btn"
+                        href="https://www.ifood.com.co/delivery/cali-vac/la-sucursal-burguer-valle-de-lili-hub-el-ingenio/51e1972f-a89b-419a-a877-031713faa735">Pide
+                        Ya!</a>
                 </li>
             </ul>
         </div>
@@ -35,146 +39,175 @@
     <!-- /Header -->
 
     <!-- MAIN -->
-    <div class="fondo-container">
-        <img src="assets/14589.jpg" class="img-fondo" alt="">
-        <div class="main-container">
-            <section class="menu-container" id="menu-container">
-                <h1>Nuestra Carta</h1>
-                <p>Somos especialistas en Hamburguesas, Perros y Pinchos. Encuéntranos en Ifood o pídenos al Whatsapp</p>
-                <div class="container-grid">
-                    <article class="ifood-btn-container">
-                        <figure class="ifood-container-img">
-                            <img src="assets/ifood-color.svg" alt="">
-                        </figure>
-                        <div class="ifood-detalle">
-                            <h2>Pide por Ifood</h2>
-                            <p>Encuentra nuestro menú por Ifood</p>
-                            <a href="#">Pedir Ya!</a>
-                        </div>
-                    </article>
-                    <article class="whatsapp-btn-container">
-                        <figure class="whatsapp-container-img">
-                            <img src="assets/whatsapp-color.svg" alt="">
-                        </figure>
-                        <div class="whatsapp-detalle">
-                            <h2>Pide por Whatsapp</h2>
-                            <p>Lorem consequatur sint</p>
-                            <a href="#">Pedir Ya!</a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <section class="detal-menu">
-                <div class="container-plato">
-                    <div class="img-plato-container">
-                        <img src="assets/La patatus.jpeg" alt="Hamburguesa doble carne">
+    <div class="main-container">
+        <section class="menu-container" id="menu-container">
+            <h1>Nuestra Carta</h1>
+            <p>Somos especialistas en Hamburguesas, Perros y Pinchos. Encuéntranos en Ifood o pídenos al Whatsapp</p>
+            <div class="container-grid">
+                <article class="ifood-btn-container">
+                    <figure class="ifood-container-img">
+                        <img src="assets/ifood-color.svg" alt="">
+                    </figure>
+                    <div class="ifood-detalle">
+                        <h2>Pide por Ifood</h2>
+                        <p>Encuentra nuestro menú por Ifood</p>
+                        <a href="#">Pedir Ya!</a>
                     </div>
-                    <div class="detal-container">
-                        <div class="container-border">
-                            <h2>La Patatus</h2>
-                            <div class="borde-pequeno"></div>
-                            <p>Para los amantes de los retos llega la más grande de la casa,
-                                doble carne artesanal para un total de 300 gramos, con queso doble crema,
-                                cebolla caramelizada, lechuga, tomate, salsas y el delicioso pan de la casa.
-                            </p>
-                            <p>Precio: $17.000    <a href="#" class="canengo">Encañengada: $22.000</a></p>
-                            <a href="#menu-container" class="la-quiero">La quiero</a>
-                        </div>
+                </article>
+                <article class="whatsapp-btn-container">
+                    <figure class="whatsapp-container-img">
+                        <img src="assets/whatsapp-color.svg" alt="">
+                    </figure>
+                    <div class="whatsapp-detalle">
+                        <h2>Pide por Whatsapp</h2>
+                        <p>Lorem consequatur sint</p>
+                        <a href="#">Pedir Ya!</a>
                     </div>
-                </div>
-            </section>
-            <section class="detal-menu">
-                <div class="container-plato-2">
-                    <div class="img-plato-container-2">
-                        <img src="assets/lamparosa.jpeg" alt="Hamburguesa lamparosa">
-                    </div>
-                    <div class="detal-container-2">
-                        <div class="container-border-2">
-                            <h2>La Lamparosa</h2>
-                            <div class="borde-pequeno"></div>
-                            <p>Carne artesanal de 120 gramos, costilla pulpa Premium picada, queso mozarella,
-                                cebolla caramelizada, pepinillos, lechuga, tomate y ripio de papa, salsas en pan artesanal.
-                            </p>
-                            <p>Precio: $16.000    <a href="#" class="canengo">Encañengada: $21.000</a></p>
-                            <a href="#menu-container" class="la-quiero">La quiero</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="detal-menu">
-                <div class="container-plato">
-                    <div class="img-plato-container">
-                        <img src="assets/guabalosa.jpg" alt="Hamburguesa doble carne">
-                    </div>
-                    <div class="detal-container">
-                        <div class="container-border">
-                            <h2>La Guabalosa</h2>
-                            <div class="borde-pequeno"></div>
-                            <p>Carne artesanal de 120 gramos, maduritos picados en cubos, 
-                                queso mozarella, tocineta, lechuga, tomate, ripio de papa,
-                                salsas y delicioso pan artesanal.
-                            </p>
-                            <p>Precio: $15.000    <a href="#" class="canengo">Encañengada: $20.000</a></p>
-                            <a href="#menu-container" class="la-quiero">La quiero</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="detal-menu">
-                <div class="container-plato-2">
-                    <div class="img-plato-container-2">
-                        <img src="assets/chichipata.jpg" alt="Hamburguesa chichipata">
-                    </div>
-                    <div class="detal-container-2">
-                        <div class="container-border-2">
-                            <h2>La Chichipata</h2>
-                            <div class="borde-pequeno"></div>
-                            <p>Carne artesanal de 120 gramos, queso mozarella, tocineta, pepinillos, lechuga, tomate,
-                                cebolla, ripio de papa y salsas en un delicioso pan artesanal.
-                            </p>
-                            <p>Precio: $13.000    <a href="#" class="canengo">Encañengada: $18.000</a></p>
-                            <a href="#menu-container" class="la-quiero">La quiero</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="detal-menu">
-                <div class="container-plato">
-                    <div class="img-plato-container">
-                        <img src="assets/calidoso.jpg" alt="Perro Calidoso">
-                    </div>
-                    <div class="detal-container">
-                        <div class="container-border">
-                            <h2>El Calidoso</h2>
-                            <div class="borde-pequeno"></div>
-                            <p>Salchicha con costilla pulpa Premium picada, queso fundido, cebolla caramelizada,
-                                ripio de papa y salsas.
-                            </p>
-                            <p>Precio: $13.000    <a href="#" class="canengo">Encañengada: $18.000</a></p>
-                            <a href="#menu-container" class="la-quiero">La quiero</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="detal-menu">
-                <div class="container-plato-2">
-                    <div class="img-plato-container-2">
-                        <img src="assets/visajoso.jpg" alt="Perro visajoso">
-                    </div>
-                    <div class="detal-container-2">
-                        <div class="container-border-2">
-                            <h2>El Visajoso</h2>
-                            <div class="borde-pequeno"></div>
-                            <p>Salchicha con delicioso maduro picado, queso fundido, ripio de papa y salsas.
-                            </p>
-                            <p>Precio: $12.000    <a href="#" class="canengo">Encañengada: $17.000</a></p>
-                            <a href="#menu-container" class="la-quiero">La quiero</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
+        <div class="container-menu-titulo" id="menu">
+            <h1 class="titulo-con-fondo-menu">NUESTRO MENÚ</h1>
         </div>
-    </div>
+        <section class="detal-menu">
+            <div class="container-plato">
+                <div class="img-plato-container">
+                    <img src="assets/La patatus.jpeg" alt="Hamburguesa doble carne">
+                </div>
+                <div class="detal-container">
+                    <div class="container-border">
+                        <h2>La Patatus</h2>
+                        <div class="borde-pequeno"></div>
+                        <p>Para los amantes de los retos llega la más grande de la casa,
+                            doble carne artesanal para un total de 300 gramos, con queso doble crema,
+                            cebolla caramelizada, lechuga, tomate, salsas y el delicioso pan de la casa.
+                        </p>
+                        <p>Precio: $17.000 <a href="#canengos" class="canengo">Encañengada: $22.000</a></p>
+                        <a href="#menu-container" class="la-quiero">La quiero</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detal-menu">
+            <div class="container-plato-2">
+                <div class="img-plato-container-2">
+                    <img src="assets/lamparosa.jpeg" alt="Hamburguesa lamparosa">
+                </div>
+                <div class="detal-container-2">
+                    <div class="container-border-2">
+                        <h2>La Lamparosa</h2>
+                        <div class="borde-pequeno"></div>
+                        <p>Carne artesanal de 120 gramos, costilla pulpa Premium picada, queso mozarella,
+                            cebolla caramelizada, pepinillos, lechuga, tomate y ripio de papa, salsas en pan artesanal.
+                        </p>
+                        <p>Precio: $16.000 <a href="#canengos" class="canengo">Encañengada: $21.000</a></p>
+                        <a href="#menu-container" class="la-quiero">La quiero</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detal-menu">
+            <div class="container-plato">
+                <div class="img-plato-container">
+                    <img src="assets/guabalosa.jpg" alt="Hamburguesa doble carne">
+                </div>
+                <div class="detal-container">
+                    <div class="container-border">
+                        <h2>La Guabalosa</h2>
+                        <div class="borde-pequeno"></div>
+                        <p>Carne artesanal de 120 gramos, maduritos picados en cubos,
+                            queso mozarella, tocineta, lechuga, tomate, ripio de papa,
+                            salsas y delicioso pan artesanal.
+                        </p>
+                        <p>Precio: $15.000 <a href="#canengos" class="canengo">Encañengada: $20.000</a></p>
+                        <a href="#menu-container" class="la-quiero">La quiero</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detal-menu">
+            <div class="container-plato-2">
+                <div class="img-plato-container-2">
+                    <img src="assets/chichipata.jpg" alt="Hamburguesa chichipata">
+                </div>
+                <div class="detal-container-2">
+                    <div class="container-border-2">
+                        <h2>La Chichipata</h2>
+                        <div class="borde-pequeno"></div>
+                        <p>Carne artesanal de 120 gramos, queso mozarella, tocineta, pepinillos, lechuga, tomate,
+                            cebolla, ripio de papa y salsas en un delicioso pan artesanal.
+                        </p>
+                        <p>Precio: $13.000 <a href="#canengos" class="canengo">Encañengada: $18.000</a></p>
+                        <a href="#menu-container" class="la-quiero">La quiero</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detal-menu">
+            <div class="container-plato">
+                <div class="img-plato-container">
+                    <img src="assets/calidoso.jpg" alt="Perro Calidoso">
+                </div>
+                <div class="detal-container">
+                    <div class="container-border">
+                        <h2>El Calidoso</h2>
+                        <div class="borde-pequeno"></div>
+                        <p>Salchicha con costilla pulpa Premium picada, queso fundido, cebolla caramelizada,
+                            ripio de papa y salsas.
+                        </p>
+                        <p>Precio: $13.000 <a href="#canengos" class="canengo">Encañengada: $18.000</a></p>
+                        <a href="#menu-container" class="la-quiero">La quiero</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detal-menu">
+            <div class="container-plato-2">
+                <div class="img-plato-container-2">
+                    <img src="assets/visajoso.jpg" alt="Perro visajoso">
+                </div>
+                <div class="detal-container-2">
+                    <div class="container-border-2">
+                        <h2>El Visajoso</h2>
+                        <div class="borde-pequeno"></div>
+                        <p>Salchicha con delicioso maduro picado, queso fundido, ripio de papa y salsas.
+                        </p>
+                        <p>Precio: $12.000 <a href="#canengos" class="canengo">Encañengada: $17.000</a></p>
+                        <a href="#menu-container" class="la-quiero">La quiero</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="adiciones-section" id="canengos">
+        <div class="container-adiciones">
+            <div class="container-fondo-titulo">
+                <h1 class="titulo-con-fondo">Engallando y Cañengos</h1>
+            </div>
+            <p>Vení te explico ve, si pedís tu comida encañengada te la mandamos en combo
+                (Gaseosa y Papas a la francesa) y si querés engallarla es como ponerle adiciones
+                en Caleño, ¿Si pillas?. Aquí te dejo la carta para que pillés.</p>
+            <div class="container-btn-carta">
+                <a href="" class="btn-carta">Carta</a>
+                <a href="#menu-container" class="btn-pedirya">Pedir Ya!</a>
+            </div>
+        </div>
+    </section>
+    <section class="visitanos" id="visitanos">
+        <div class="container-visitanos">
+            <div class="container-grid-visitanos">
+                <div class="container-texto">  
+                    <h1>Vísitanos</h1>
+                    <p>Date un Borondo y llega a comer sabroso ve</p>
+                </div>
+                <div class="container-img-visitanos">
+                    <img src="assets/Carro.jpg" alt="">
+                </div>
+            </div>
+            <div class="container-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.9215724765922!2d-76.51191248529531!3d3.3693476526992154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1cfba21ac39%3A0x1727c1a05e3c3afc!2sLa%20Sucursal%20Burger!5e0!3m2!1ses!2sco!4v1611548138343!5m2!1ses!2sco" width="1300" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
+            </div>
+    </section>
+</div>
 
     <!-- /MAIN -->
 
@@ -202,15 +235,17 @@
             <div class="redes-sociales">
                 <h2 class="redes">¡Seguínos en redes sociales!</h2>
                 <div class="container-redes">
-                    <a href="https://www.instagram.com/lasucursalburger/?hl=es-la" class="social-link instagram"> </a> 
-                    <a href="https://www.whatsapp.com/" class="social-link whatsapp"> </a> 
-                    <a href="https://www.ifood.com.co/delivery/cali-vac/la-sucursal-burguer-valle-de-lili-hub-el-ingenio/51e1972f-a89b-419a-a877-031713faa735" class="social-link ifood"> </a> 
-                    <a href="https://www.facebook.com/alejobordonez99/" class="social-link facebook"> </a> 
-                    <a href="#" class="social-link tiktok"> </a> 
+                    <a href="https://www.instagram.com/lasucursalburger/?hl=es-la" class="social-link instagram"> </a>
+                    <a href="https://www.whatsapp.com/" class="social-link whatsapp"> </a>
+                    <a href="https://www.ifood.com.co/delivery/cali-vac/la-sucursal-burguer-valle-de-lili-hub-el-ingenio/51e1972f-a89b-419a-a877-031713faa735"
+                        class="social-link ifood"> </a>
+                    <a href="https://www.facebook.com/alejobordonez99/" class="social-link facebook"> </a>
+                    <a href="#" class="social-link tiktok"> </a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- /FOOTER -->
 </body>
+
 </html>
