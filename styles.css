@@ -255,7 +255,7 @@ header {
 .container-border {
     margin: 0;
     height: 380px;
-    width: 104%;
+    margin-right: -4%;
     border-bottom: 5px solid red;
     border-right: 5px solid red;
 }
