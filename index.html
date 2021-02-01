@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <title>La Sucursal Burguer</title>
-</head>
 
 <body>
     <!-- Header -->
@@ -29,8 +25,7 @@
                     <a href="#visitanos" class="link visitanos-btn">Visítanos</a>
                 </li>
                 <li class="ifood-header">
-                    <a  class="link ifood-btn"
-                        href="https://www.ifood.com.co/delivery/cali-vac/la-sucursal-burguer-valle-de-lili-hub-el-ingenio/51e1972f-a89b-419a-a877-031713faa735">Pide
+                    <a  class="link ifood-btn" href="#menu-container">Pide
                         Ya!</a>
                 </li>
             </ul>
@@ -40,32 +35,25 @@
 
     <!-- MAIN -->
     <div class="main-container">
-        <section class="menu-container" id="menu-container">
-            <h1>Nuestra Carta</h1>
-            <p>Somos especialistas en Hamburguesas, Perros y Pinchos. Encuéntranos en Ifood o pídenos al Whatsapp</p>
-            <div class="container-grid">
-                <article class="ifood-btn-container">
-                    <figure class="ifood-container-img">
-                        <img src="assets/ifood-color.svg" alt="">
-                    </figure>
-                    <div class="ifood-detalle">
-                        <h2>Pide por Ifood</h2>
-                        <p>Encuentra nuestro menú por Ifood</p>
-                        <a href="#">Pedir Ya!</a>
-                    </div>
-                </article>
-                <article class="whatsapp-btn-container">
-                    <figure class="whatsapp-container-img">
-                        <img src="assets/whatsapp-color.svg" alt="">
-                    </figure>
-                    <div class="whatsapp-detalle">
-                        <h2>Pide por Whatsapp</h2>
-                        <p>Lorem consequatur sint</p>
-                        <a href="#">Pedir Ya!</a>
-                    </div>
-                </article>
+        <!-- Bienvenida Section -->
+        <section class="bienvenida-container">
+            <div class="bienvenida-grid">
+                <div class="bienvenida-texto">
+                    <h1>LA<br>SUCURSAL<br>LE DA LA<br>BIENVENIDA</h1>
+                    <p>Comida al paso</p>
+                    <p>Diariamente en las calles, La Sucursal es un Food truck
+                        de hamburguesas reconocido que entrega comida rápida y 
+                        deliciosa al paso. Ya sea que necesites un delicioso 
+                        bocadillo o que no tengas tiempo de sentarte a comer, 
+                        tenemos lo que necesitas.</p>
+                </div>
+                <div class="bienvenida-imagen">
+                    <img src="assets/jonathan-borba-1kA3lACHeqk-unsplash.jpg" alt="">
+                </div>
             </div>
         </section>
+
+        <!-- Menu Section -->
         <div class="container-menu-titulo" id="menu">
             <h1 class="titulo-con-fondo-menu">NUESTRO MENÚ</h1>
         </div>
@@ -178,6 +166,7 @@
                 </div>
             </div>
         </section>
+        <!-- Adiciones section -->
     <section class="adiciones-section" id="canengos">
         <div class="container-adiciones">
             <div class="container-fondo-titulo">
@@ -192,12 +181,17 @@
             </div>
         </div>
     </section>
+    <!-- Visitanos section -->
     <section class="visitanos" id="visitanos">
+        <h1 class="titulo-visitanos">Ubicación</h1>
+        <p class="texto-visitanos">Comida sobre ruedas</p>
         <div class="container-visitanos">
             <div class="container-grid-visitanos">
                 <div class="container-texto">  
-                    <h1>Vísitanos</h1>
+                    <h1>Visítanos</h1>
                     <p>Date un Borondo y llega a comer sabroso ve</p>
+                    <p>Martes a Domingo</p>
+                    <p>Carrera 98 C con Calle 55</p>
                 </div>
                 <div class="container-img-visitanos">
                     <img src="assets/Carro.jpg" alt="">
@@ -208,7 +202,34 @@
             </div>
     </section>
 </div>
-
+    
+<!-- Pedir section -->
+    <section class="menu-container" id="menu-container">
+        <h1 class="titulo-visitanos">Opciones para tú</h1>
+        <p>Somos especialistas en Hamburguesas, Perros y Pinchos. Encuéntranos en Ifood o pídenos al Whatsapp</p>
+        <div class="container-grid">
+            <article class="ifood-btn-container">
+                <figure class="ifood-container-img">
+                    <img src="assets/ifood-color.svg" alt="">
+                </figure>
+                <div class="ifood-detalle">
+                    <h2>Pide por Ifood</h2>
+                    <p>Encuentra nuestro menú por Ifood</p>
+                    <a href="https://www.ifood.com.co/delivery/cali-vac/la-sucursal-burguer-valle-de-lili-hub-el-ingenio/51e1972f-a89b-419a-a877-031713faa735" class="ifood-btnd">Pedir Ya!</a>
+                </div>
+             </article>
+            <article class="whatsapp-btn-container">
+                <figure class="whatsapp-container-img">
+                    <img src="assets/whatsapp-color.svg" alt="">
+                </figure>
+                <div class="whatsapp-detalle">
+                    <h2>Pide por Whatsapp</h2>
+                    <p>Lorem consequatur sint</p>
+                    <a href="https://api.whatsapp.com/send?phone=573024382121" class="whatsapp-btn">Pedir Ya!</a>
+                </div>
+            </article>
+        </div>
+    </section>
     <!-- /MAIN -->
 
     <!-- FOOTER -->
@@ -247,5 +268,4 @@
     </footer>
     <!-- /FOOTER -->
 </body>
-
 </html>

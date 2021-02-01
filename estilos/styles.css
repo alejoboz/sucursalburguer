@@ -1,0 +1,697 @@
+body {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+li {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+@font-face {
+    font-family: "Alpha Echo";
+    src: url(../assets/alpha_echo.ttf);
+}
+
+/* --------------------------------- */
+/* --------- HEADER----------------- */
+/* --------------------------------- */
+
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #fffde0a1;
+    display: grid;
+}
+
+.container-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo links";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    width: 300px;
+    height: 95px;
+    object-fit: cover;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-right: 25%;
+    font-size: 1.2em;
+    color: black;
+    grid-area: links;
+}
+
+.ifood-header {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+.link.ifood-btn {
+    color: white;
+}
+
+.link {
+    list-style: none;
+    text-decoration: none;
+}
+
+.link.visitanos-btn {
+    color: black;
+}
+
+.link.nuestro-menu {
+    color: black;
+}
+
+/* --------------------------------- */
+/* --------- MAIN----------------- */
+/* --------------------------------- */
+
+.container-menu-titulo {
+    margin: 0 auto;
+    width: 80%;
+    height: 100px;
+}
+
+.titulo-con-fondo-menu {
+    width: 100%;
+    background-image: url(assets/img.svg);
+    text-align: center;
+    font-size: 5em;
+    padding-top: 20px;
+    margin-top: 0;
+    font-family: "Alpha Echo";
+    color: black;
+    height: inherit;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    flex-direction: column;
+    align-self: center;
+    padding: 70px 0;
+}
+
+.menu-container p {
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.container-grid {
+    margin: 0 auto;
+    display: inherit;
+    width: 80%;
+    max-width: 950px;
+}
+
+.ifood-btn-container {
+    margin: 1%;
+    width: 45%;
+    border-radius: 20px;
+    background-color: red;
+    margin-left: 50px;
+}
+
+.ifood-container-img {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.ifood-container-img img {
+    width: 100%;
+    height: 200px;   
+    margin-top: 20px;
+}
+
+.ifood-detalle {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.ifood-detalle h2 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+}
+
+.ifood-detalle p {
+    font-size: 1.3em;
+    margin: 10px 0 20px;
+}
+
+.ifood-detalle a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+}
+
+.whatsapp-btn-container {
+    margin: 1%;
+    width: 45%;
+    border-radius: 20px;
+    background-color: greenyellow;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.whatsapp-container-img {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.whatsapp-container-img img {
+    width: 100%;
+    height: 200px;
+}
+
+.whatsapp-detalle {
+    margin: 20px 40px;
+    margin-top: -17px;
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.whatsapp-detalle h2 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+}
+
+.whatsapp-detalle p {
+    font-size: 1.3em;
+    margin: 10px 0 20px;
+}
+
+.whatsapp-btn {
+    background-color: greenyellow;
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+}
+
+.ifood-btnd {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+}
+/* --------------------------------- */
+/* --------- Section 2 - Menú detallado ----------------- */
+
+.detal-menu {
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+.container-plato {
+    display: flex;
+    height: 400px;
+}
+
+.img-plato-container {
+    width: 60%;
+}
+
+.img-plato-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: -50px;
+    box-shadow: 0 0 10px 1px #2e2e2f;
+}
+
+.detal-container {
+    color: white;
+    text-align: initial;
+    background-color: black;
+    position: absolute;
+    width: 40%;
+    margin-left: 50%;
+    height: 400px;
+    padding: 0 25px;
+}
+
+.container-border {
+    margin: 0;
+    height: 380px;
+    margin-right: -4%;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+}
+
+.container-border h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+/*     font-family: bangers, sans-serif
+ */}
+
+.borde-pequeno {
+    width: 30%;
+    border-top: 5px solid red;
+}
+
+.container-border p {
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-bottom: 1.5em;
+}
+
+.container-border .la-quiero {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.canengo {
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.detal-container-2 {
+    color: white;
+    text-align: initial;
+    background-color: black;
+    position: absolute;
+    width: 40%;
+    height: 400px;
+}
+
+.img-plato-container-2 {
+    width: 60%;
+}
+
+.img-plato-container-2 img {
+    width: 106%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: -50px;
+    box-shadow: 0 0 10px 1px #2e2e2f;
+    margin-left: 60%;
+}
+
+.container-border-2 {
+    height: 380px;
+    width: 90%;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    padding: 0 25px;
+    margin-left: -5px;
+}
+
+.container-border-2 h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+/*     font-family: bangers, sans-serif
+ */}
+
+.container-border-2 p {
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-bottom: 1.5em;
+}
+
+.container-border-2 .la-quiero {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.container-plato-2 {
+    display: flex;
+    margin-left: 4%;
+    height: 400px;
+}
+
+.adiciones-section {
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 0 10px 1px #2e2e2f;
+}
+
+.container-adiciones {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: inherit;
+}
+
+.titulo-con-fondo {
+    width: 100%;
+    background-image: url(assets/img.svg);
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 20px;
+    margin-top: 0;
+    font-family: "Alpha Echo";
+    color: black;
+    height: inherit;
+}
+
+.container-fondo-titulo {
+    margin: 0 auto;
+    width: 70%;
+    height: 60px;
+}
+
+
+.container-adiciones p {
+    padding: 0 40px;
+    padding-top: 20px;
+    font-size: 1.3em;
+    text-align: initial;
+}
+
+.container-btn-carta {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container-btn-carta a {
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.btn-carta {
+    background-color: #f6c75f;
+    color: black;
+}
+
+.btn-pedirya {
+    background-color: red;
+    color: white;
+}
+
+/* --------------------------------- */
+/* --------- Section 3 - Visitanos ----------------- */
+
+.visitanos {
+    background-color: black;
+    box-shadow: 0 0 1px 0px white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container-visitanos {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-grid-visitanos {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.container-texto {
+    display: flex;
+    background-color: #1d1c1a;
+    color: white;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-texto h1 {
+    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.container-texto p {
+    font-size: 1.3em;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.container-img-visitanos {
+    width: 50%;
+}
+
+.container-img-visitanos img {
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    object-fit: cover;
+}
+
+.container-mapa {
+    width: 100%;
+    background-color: #2b2a2a;
+    filter: invert(1);
+}
+
+.container-mapa iframe {
+    width: 100%;
+}
+
+.titulo-visitanos {
+    color: #f6c75f;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    font-family: "Alpha Echo";
+    text-align: center;
+}
+
+.texto-visitanos {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+/* --------------------------------- */
+/* --------- FOOTER----------------- */
+/* --------------------------------- */
+
+footer {
+    width: 100%;
+    height: 250px;
+    display: grid;
+    background-color: #fffde0a1;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "logo about social";
+}
+
+.logo-footer {
+    padding-left: 25%;
+}
+
+.container-img-footer {
+    width: 300px;
+    height: 150px;
+    display: block;
+    text-align: center;
+    grid-area: logo;
+}
+
+.container-img-footer p {
+    margin-top: -9px;
+}
+
+.img-footer {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us h2 {
+    margin-top: -40px;
+}
+
+.container-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 0 100px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.container-about-us a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 25%;
+}
+
+.redes-sociales h2 {
+    margin-top: -40px;
+}
+
+.container-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-block;
+    width: 55px;
+    height: 95px;
+    margin: 0 -5px;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .social-link.tiktok {
+    background-image: url('../assets/tik-tok.svg');
+  }
+  
+  .social-link.facebook {
+    background-image: url('../assets/facebook-color.svg');
+  }
+  
+  
+  .social-link.instagram {
+    background-image: url('../assets/instagram-color.svg');
+  }
+  
+  .social-link.whatsapp {
+    background-image: url('../assets/whatsapp-color.svg');
+  }
+
+  .social-link.ifood {
+    background-image: url('../assets/ifood-color.svg');
+  }
+
+/*---------------------------------------*/
+/*------------ Bienvenida ---------------*/
+/*---------------------------------------*/
+
+.bienvenida-container {
+    width: 100%;
+    height: 1050px;
+    background-color: black;
+}
+
+.bienvenida-grid {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: inherit;
+}
+
+.bienvenida-texto {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1d1c1a;
+    height: inherit;
+}
+
+.bienvenida-texto h1 {
+    font-size: 5em;
+    padding: 0 100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.bienvenida-texto p {
+    font-size: 1.3em;
+    margin-top: 0;
+    padding: 0 100px;
+}
+
+.bienvenida-imagen {
+    width: 50%;
+    height: inherit;
+}
+
+.bienvenida-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
